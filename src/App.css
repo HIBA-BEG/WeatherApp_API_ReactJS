@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,80 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #FFC0CB, #8A2BE2, #4B0082);
+  color: #333;
+  padding: 10px;
+}
+
+.weather-widget {
+  width: 100%;
+  max-width: 700px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.temperature {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.location {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.weather-icon {
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  fill: #FFD700;
+}
+
+.forecast-widget {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.forecast-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-weight: bold;
+  width: 25%;
+}
+
+.humidity {
+  font-weight: bold;
+}
+
+.temperature-range {
+  font-weight: bold;
+  width: 25%;
+  text-align: right;
 }
